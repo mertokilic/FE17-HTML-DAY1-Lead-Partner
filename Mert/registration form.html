@@ -1,16 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Registration Form</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+
     <label for="name">First Name:</label>
     <input type="text" placeholder="Enter your first name" required />
-
+    <br/>
+    <br/>
     <label for="name">Last Name:</label>
     <input type="text" placeholder="Enter your last name" required />
-  </body>
+
+    <p><u>Choose your course</u></p>
+
+    <select name="dropdown" required>
+      <option disabled selected value>Select</option>
+      <option value="HTML">HTML</option>
+      <option value="CSS">CSS</option>
+      <option value="JavaScript">JavaScript</option>
+      <option value="Python">Python</option>
+    </select>
+
+    <p>Select your gender</p>
+    <input type="radio" value="male" />
+    <label for="male"> Male </label>
+
+    <input type="radio" value="female" />
+    <label for="female"> Female </label>
+
+    <input type="radio" value="other" />
+    <label for="other"> Other </label>
+
+    <p>Why do you want to be a developer?</p>
+
+    <input value="passion" type="checkbox" />
+    <label for="passion"> Passion </label>
+    <br />
+    <input value="money" type="checkbox" />
+    <label for="money"> Money </label>
+    <br />
+    <input value="fun" type="checkbox" />
+    <label for="fun"> Just for fun </label>
+    <br />
+
+    <p>Tell us your E-Mail Adress:</p>
+
+    <input type="email" value="email" required />
+    <label for="email">Enter your Mail Adress</label>
+
+    <p>Select a passwort</p>
+
+    <input type="passwort" value="passwort" />
+    <label for="passwort">Passwort</label>
+    <br />
+    <button>Submit</button>
+</body>
 </html>
